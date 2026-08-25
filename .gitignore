@@ -1,6 +1,8 @@
 # compiled binary, named after the module
 /qbittorrent-peers-exporter
 
+.env
+
 # go test artifacts
 *.test
 *.out
