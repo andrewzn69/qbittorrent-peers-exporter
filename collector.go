@@ -79,7 +79,7 @@ func (c *Collector) Collect(ch chan<- prometheus.Metric) {
 	for _, s := range c.stats {
 		ch <- prometheus.MustNewConstMetric(peersDesc, prometheus.GaugeValue, float64(s.peers), s.country, s.iso3)
 		ch <- prometheus.MustNewConstMetric(downDesc, prometheus.GaugeValue, float64(s.down), s.country, s.iso3)
-		ch <- prometheus.MustNewConstMetric(unresolvedDesc, prometheus.GaugeValue, float64(s.up), s.country, s.iso3)
+		ch <- prometheus.MustNewConstMetric(upDesc, prometheus.GaugeValue, float64(s.up), s.country, s.iso3)
 	}
 }
 
