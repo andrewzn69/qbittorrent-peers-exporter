@@ -1,0 +1,11 @@
+# compiled binary, named after the module
+/qbittorrent-peers-exporter
+
+# go test artifacts
+*.test
+*.out
+
+# editor and os noise
+.DS_Store
+.idea/
+*.swp
